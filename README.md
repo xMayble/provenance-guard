@@ -47,6 +47,16 @@ curl -s -X POST http://localhost:5000/submit \
   -d '{"text": "The sun dipped below the horizon...", "creator_id": "test-user-1"}'
 ```
 
+## Try it yourself (no curl needed)
+
+Two helper scripts talk to the running server, so you don't need `curl`. With the server
+running (`python app.py`), open a second terminal and run either:
+
+- **`python try_it.py`** — interactive: type or paste any text, press Enter, and see the
+  attribution, confidence, both signal scores, and the reader label. Type `quit` to exit.
+- **`python demo.py`** — a scripted end-to-end tour: submits a human-sounding and an
+  AI-sounding text, files an appeal, and prints the audit log.
+
 ## Architecture overview
 
 The path a submission takes from input to label:
