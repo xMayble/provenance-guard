@@ -8,6 +8,9 @@
 *.db
 *.sqlite3
 
+# Runtime audit log / data store (regenerated at runtime; sample lives in README)
+store.json
+
 # Python cache
 __pycache__/
 *.pyc
